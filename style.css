@@ -1,0 +1,747 @@
+body{
+    background-image:url("Index.jpg");
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size : 18px;
+
+}
+
+.assurvivor{
+    font-size : 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nom{
+    text-align: center;
+}
+
+h1{
+    font-size: 7rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.1rem;
+    text-align: center;
+}
+
+ul{
+    background-color: black;
+    margin-top:0;
+    padding-left: 0;
+    padding-bottom: 15px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none; /*enlever les points des listes*/
+    display: inline-block; /*mettre la liste en horizontal / enlever le passement a la ligne*/
+    padding-right: 10px;
+    padding-top: 10px;
+}
+a{
+    color:rgb(185, 102, 7); /*couleur du texte de la balise a*/
+    text-decoration: none; /*enlever le soulignement*/
+    /*background-color: #424949; / mettre une couleur d'arriere plan au bouton */
+    padding: 3px 6px 6px 6px /* padding: 10px / taille des boutons */
+    /* font-size : 100px / taille du texte */ 
+} 
+
+a:hover { /*hover signifie lorsqu'on met la souris dessus*/
+    color : white;  /*mettre une couleur au texte */
+    background-color: rgb(185, 108, 7) ;  /*mettre une couleur d'arriere plan au bouton */
+    transition: 0.5s; /* temps de transition du changement */
+    padding: 4px 7px 7px 7px;
+    border-radius: 7px;
+}
+
+.text {
+    background-color: black;
+    opacity: 0.8 ;
+    text-align: center;
+    margin-left : 22rem;
+    padding-top: 2rem;
+    width: 70rem;
+    height : 53rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    
+}
+.image {
+    padding-left: 20px;
+}
+
+.Dwight__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+
+
+}
+
+.Dwight__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Meg__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Meg__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Claudette__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Claudette__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.jake__overlay {
+    position: absolute;
+    top: 11.8rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.jake__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Néa__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Néa__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Ace__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Ace__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Feng__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Feng__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.David__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.David__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Laurie__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Laurie__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Trapp__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Trapp__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Kate__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Kate__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Adam__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Adam__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Jeff__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Jeff__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Jane__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Jane__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Nancy__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Nancy__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Steve__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Steve__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Piegeur__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Piegeur__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Spectre__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Spectre__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Montagnard__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Montagnard__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Infiermiere__overlay {
+    position: absolute;
+    top: 12.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Infiermiere__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Harpie__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Harpie__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Docteur__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Docteur__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Chasseuse__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Chasseuse__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Myers__overlay {
+    position: absolute;
+    top: 44.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Myers__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Cochon__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Cochon__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Clown__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Clown__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+.Esprit__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Esprit__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Légion__overlay {
+    position: absolute;
+    top: 76.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Légion__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Cannibal__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 2;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Cannibal__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Ghost__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 30.3rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Ghost__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Plague__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 59.4rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Plague__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
+
+.Demongorgon__overlay {
+    position: absolute;
+    top: 108.4rem;
+    left: 88.45rem;
+    width: 28.8rem;
+    height: 31.7rem;
+    background: rgba(0, 0, 0, 0.6);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.Demongorgon__overlay:hover {
+    background: black;
+    opacity: 0.8;
+}
